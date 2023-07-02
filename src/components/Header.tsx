@@ -1,11 +1,20 @@
-import { header, link, logo } from './Header.css'
-const Header = () => {
+import { Link } from 'react-router-dom'
+import { Navbar, Nav } from 'react-bootstrap'
+
+function Header () {
   return (
-    <nav className={header}>
-      <img className={logo} src='https://cdn-icons-png.flaticon.com/512/1230/1230239.png?w=740&t=st=1685578575~exp=1685579175~hmac=ad1c9c2ba3d28e776fee5360010317265b0056c8129d6d8b0c70b6e0f3bbd371' alt='logo tomado de freepick' />
-      <a className={link} href='/'>Portfolio</a>
-    </nav>
+    <Navbar bg='light' expand='lg'>
+      <Navbar.Brand as={Link} to='/'>My Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto'>
+          <Nav.Link as={Link} to='/'>Home</Nav.Link>
+          <Nav.Link as={Link} to='/projects'>Projects</Nav.Link>
+          <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
-export { Header }
+export default Header

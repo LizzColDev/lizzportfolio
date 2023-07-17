@@ -8,8 +8,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-primary: #142740;
+  --color-secondary: #2C3F59;
+  --color-accent: #FFD700;
+  --color-background: #F2F2F2;
+  --color-text: #333333;
 }
 
 body{
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }

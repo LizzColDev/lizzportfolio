@@ -1,21 +1,21 @@
-import { style } from '@vanilla-extract/css'
+header{
+  background-color: var(--color-primary);
+}
+.navbar, a.navbar-brand, a.navbar-brand:focus, a.navbar-brand:hover{
+  max-width: 900px;
+  color: var(--color-accent);
+}
 
-export const header = style({
-  alignItems: 'center',
-  borderBottom: '1px solid #eee',
-  display: 'flex',
-  gap: '16px',
-  padding: '8px 32px'
-})
+a.nav-link {
+  color: var(--color-background);
+}
 
-export const link = style({
-  color: '#384151',
-  textDecoration: 'none',
-  fontSize: '18px',
-  margin: '0'
-})
-
-export const logo = style({
-  width: '48px',
-  height: 'auto'
-})
+a.nav-link:focus, a.nav-link:hover{
+  color: var(--color-accent);
+}
+button.navbar-toggler, button.navbar-toggler:focus {
+  border: none;
+}
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 215, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

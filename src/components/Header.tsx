@@ -4,7 +4,7 @@ import './Header.css'
 function Header () {
   return (
     <header>
-      <Navbar expand='md' className='mx-auto'>
+      <Navbar expand='md' className='mx-auto navbar-header'>
         <Navbar.Brand as={Link} to='/'>My Portfolio</Navbar.Brand>
         <Navbar.Toggle className='custom-toggle' aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>

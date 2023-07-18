@@ -1,14 +1,14 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import Header from './components/Header'
 import { Suspense, lazy } from 'react'
-import Footer from './components/Footer'
 import { Container } from 'react-bootstrap'
 import './App.css'
+import Header from './components/common/Header/Header'
+import Footer from './components/common/Footer/Footer'
 
-const HomePage = lazy(() => import('./pages/HomePage'))
-const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
-const ContactPage = lazy(() => import('./pages/ContactPage'))
-const NotFoundPage = lazy(() => import('./pages/NotFound'))
+const HomePage = lazy(() => import('./components/pages/HomePage'))
+const ProjectsPage = lazy(() => import('./components/pages/ProjectsPage'))
+const ContactPage = lazy(() => import('./components/pages/ContactPage'))
+const NotFoundPage = lazy(() => import('./components/pages/NotFound'))
 
 function App () {
   return (

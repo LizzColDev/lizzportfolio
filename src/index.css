@@ -10,8 +10,8 @@
   -webkit-text-size-adjust: 100%;
 
   --color-primary: #0a1e37;
-  --color-secondary: #5b7fb0;
-  --color-accent: #FFD700;
+  --color-secondary: #001c44;
+  --color-accent: #f9dc36;
   --color-background: #0f1624;
   --color-text: #f8f8ff;
 }
@@ -20,4 +20,18 @@ body{
   margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
+}
+
+button.btn {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-weight:600;
+  border: none;
+}
+
+button.btn:hover {
+  background-color: #f9e369;
+  color: var(--color-primary);
+  font-weight:600;
+  border: none;
 }

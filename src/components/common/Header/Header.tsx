@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import './Header.css'
+import CardInfo from '../CardInfo/CardInfo'
 function Header () {
   return (
     <header>
@@ -15,6 +16,14 @@ function Header () {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <CardInfo
+        style='social-media-info'
+        image=''
+        title='Lisbeth Quintero León'
+        info={`Hey there! I'm an enthusiastic Full Stack
+        Developer.`}
+        btnInfo='Contact me'
+      />
     </header>
 
   )

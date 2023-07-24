@@ -1,0 +1,13 @@
+a.social-media-btns {
+  background-color: transparent;
+  color: var(--color-accent);
+  font-weight:600;
+  border: none;
+}
+
+a.social-media-btns:hover {
+  background-color: #f9e369;
+  color: var(--color-primary);
+  font-weight:600;
+  border: none;
+}

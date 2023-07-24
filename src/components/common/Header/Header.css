@@ -1,16 +1,13 @@
 header{
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   width: 100%;
+  padding: 12px 36px;
 }
-.navbar, a.navbar-brand, a.navbar-brand:focus, a.navbar-brand:hover{
-  max-width: 900px;
+.navbar, a.navbar-brand:focus, a.navbar-brand:hover{
   color: var(--color-accent);
 }
-nav.navbar-header{
-  padding: 12px 24px;
 
-}
-a.nav-link {
+a.nav-link,  a.navbar-brand {
   color: var(--color-text);
 }
 

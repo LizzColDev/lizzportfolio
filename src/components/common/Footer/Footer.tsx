@@ -4,7 +4,7 @@ function Footer () {
   return (
     <footer>
       <Container>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
       </Container>
     </footer>
   )
